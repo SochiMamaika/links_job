@@ -60,7 +60,8 @@ class Widget(QWidget):
 
             if file_format == ".txt":
                 self.ui.textBrowser.setPlainText(lines)
-            elif file_format == ".md":                self.ui.textBrowser.setMarkdown(lines)
+            elif file_format == ".md":
+                self.ui.textBrowser.setMarkdown(lines)
             elif file_format == ".html":
                 self.ui.textBrowser.setHtml(lines)
 
@@ -231,7 +232,7 @@ class Widget(QWidget):
                     background-color: {light_background_aim}; /* Фон при наведении */
                 }}
                 QComboBox::down-arrow {{
-                    image: url(images/str_1.png); /* Путь к вашему изображению */
+                    image: url(images/str.png); /* Путь к вашему изображению */
                     width: 20px; /* Ширина изображения */
                     height: 20px; /* Высота изображения */
                 }}
@@ -248,7 +249,7 @@ class Widget(QWidget):
                     background-color: {light_background_aim}; /* Фон при наведении */
                 }}
                 QComboBox::down-arrow {{
-                    image: url(images/str_1.png); /* Путь к вашему изображению */
+                    image: url(images/str.png); /* Путь к вашему изображению */
                     width: 20px; /* Ширина изображения */
                     height: 20px; /* Высота изображения */
                 }}
@@ -281,5 +282,3 @@ class Widget(QWidget):
                 }}
             """)
             self.ui.checkBox.setText(QCoreApplication.translate("Widget", u"Темная тема", None))
-
-
